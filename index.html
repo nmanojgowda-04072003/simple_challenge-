@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    body{
+        background-image: url(/istockphoto-1185199335-170667a.jpg);
+        background-size: cover;
+    }
+    img{
+        background: none;
+        size: 20%;
+        mix-blend-mode: multiply;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+        
+    }
+    .image{
+        background-color: transparent;
+        border: 2px solid transparent;
+        opacity: 100000px;
+        margin-top: 55px;
+        transform:rotateX('905px');
+        border-radius: 50px;
+    }
+</style>
+<body> <center>
+<h1 style="font-size: 70px;"> Catch me if u can</h1>
+    <button class="first"><img src="/100943dbe3813b6e0f8b93574cab1ca9-removebg.png" alt="" class="image"></button>
+    <script>
+        $(document).ready( function(){
+            $("button").on({
+                click:function(){
+                    $(this).aleart("u cant catch me;");
+                },
+                mouseenter:function(){
+                    $(this).animate({
+                        opacity:0,
+                        left: "50",
+                        height: "toggle"
+                      });
+                },
+
+                mouseleave:function(){
+                    $(this).animate({
+                        opacity:1000,
+                        left: "+=50",
+                        height: "toggle"
+                      });
+                },
+                
+
+            })
+        })
+    </script></center>
+</body>
+</html>
